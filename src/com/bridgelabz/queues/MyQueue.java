@@ -1,5 +1,6 @@
 package com.bridgelabz.queues;
 
+
 import com.bridgelabz.linkedlist.*;
 
 public class MyQueue<K> {
@@ -17,5 +18,19 @@ public class MyQueue<K> {
 	public void printQueue() {
 		myLinkedList.printNodes();
 	}
-
+	public INodeIF<K> dequeue()
+	{
+		
+		return myLinkedList.pop();
+	}
+	
+	public boolean isEmpty()
+	{
+		return myLinkedList.isEmpty();
+	}
+	
+	public int size() 
+	{
+		return myLinkedList.size();
+	}
 }

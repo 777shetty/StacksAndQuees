@@ -3,6 +3,7 @@ package com.bridgelabz.queues;
 
 import com.bridgelabz.linkedlist.MyNodeImpl;
 
+
 public class QueueMain {
 
 	public static void main(String[] args) 
@@ -16,6 +17,8 @@ public class QueueMain {
 		queue.enqueue(firstNode);
 		queue.enqueue(secondNode);
 		queue.enqueue(thirdNode);
+		queue.printQueue();
+		queue.dequeue();
 		queue.printQueue();
 
 	}
